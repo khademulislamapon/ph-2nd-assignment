@@ -14,8 +14,7 @@
 body{
     font-family: "Inter", sans-serif;
 }
-main, 
-footer{
+main, footer{
     background-color: #000000;
     color: white;
 }
@@ -32,7 +31,9 @@ footer{
 .run-container, 
 .trainings-and-exercises, 
 .bmi-content, 
-.bmi-section-container{
+.bmi-section-container, 
+.team-container, 
+.footer-section{
     max-width: 1060px;
     margin: 0 auto;
 }
@@ -410,6 +411,88 @@ form{
 .calculate-bmi button{
     padding: 16px 70.5px;
 }
+/* team container */
+.team-container{
+    /* border: 1px solid red; */
+    /* margin: 88px auto 88px; */
+    /* margin-top: 88px; */
+    padding: 88px 0;
+}
+.team-section{}
+
+.meet-team-content{
+    text-align: center;
+    margin: 0 auto 58px;
+}
+
+.team-member-img{
+    height: 604px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 18px;
+}
+.team-member-img img{}
+
+/* footer container */
+.footer-container{
+    height: 489px;
+    background-color: rgba(255, 255, 255, 0.1);
+    /* border: 1px solid red; */
+    padding: 66px 0 35px;
+}
+.footer-section{
+    /* border: 1px solid red; */
+    /* padding: 66px 0 35px; */
+}
+.footer-section hr{
+    margin: 59px 0 36px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-content-top{
+    justify-content: space-between;
+    /* border: 1px solid red; */
+}
+
+.brand-information{}
+.brand-information h2{
+    font-size: 4.37rem;
+    margin-bottom: 20px;
+}
+.brand-information p{
+    max-width: 423px;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    font-size: 0.87rem;
+}
+
+.site-links{}
+.site-links h4{
+    color: #FFFFFF;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 39px;
+}
+
+.site-link{
+    /* border: 1px solid red; */
+}
+.site-link ul{}
+.site-link ul li{
+    list-style: none;
+    margin-bottom: 20px;
+}
+.site-link ul li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.43rem;
+    font-weight: 400;
+}
+.footer-content-bottom{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.25rem;
+    text-align: center;
+    font-weight: 400;
+}
 
 
 
@@ -431,7 +514,8 @@ form{
     .trainings-and-exercises, 
     .bmi-content, 
     .bmi-section-container, 
-    .top-section-content{
+    .team-container, 
+    .footer-section{
         max-width: 353px;
         margin: 0 auto;
     }
@@ -669,6 +753,49 @@ form{
 
     .calculate-bmi button{
         padding: 16px 70.5px;
+    }
+
+    /* team container */
+    .team-container{
+        padding: 66px 0;
+    }
+    .team-section{}
+
+    .meet-team-content{
+        margin: 0 auto 37px;
+    }
+    .team-member-img{
+        max-width: 353px;
+        height: 1188px;
+    }
+    .team-member-img img{}
+
+    /* footer container */
+    .footer-container{
+        height: 986px;
+        padding: 44px 0 57px;
+    }
+    .footer-content-top{
+        flex-direction: column;
+    }
+    .brand-information{
+        margin-bottom: 30px;
+    }
+    .brand-information h2{
+        font-size: 4.37rem;
+        margin-bottom: 20px;
+    }
+    .brand-information p{
+        max-width: 310px;
+    }
+    .site-links h4{
+        margin-bottom: 39px;
+    }
+    .footer-section hr{
+        margin: 72px 0 41px;
+    }
+    .footer-content-bottom{
+        text-align: start;
     }
 }
 /* tablet responsiveness */
