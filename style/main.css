@@ -29,9 +29,18 @@ footer{
 .header-section, 
 .header-section-content, 
 #Change-Your-Habits, 
-.run-container{
+.run-container, 
+.trainings-and-exercises, 
+.bmi-content, 
+.bmi-section-container{
     max-width: 1060px;
     margin: 0 auto;
+}
+
+.bmi-content-header{
+    color: #FFFFFF;
+    font-size: 1.75rem;
+    font-weight: 900;
 }
 
 /* ---------header--------- */
@@ -307,8 +316,100 @@ footer{
     height: 312px;
     border-radius: 18px;
 }
+/* trainings-and-exercises */
+.trainings-and-exercises{
+    /* height: 581px; */
+    padding: 100px 0 88px;
+}
 
+.top-section-content{
+    margin-bottom: 58px;
+    max-width: 641px;
+}
+.top-section-content h2{
+    font-weight: 900;
+    font-size: 3rem;
+    color: #FFFFFF;
+    margin-bottom: 14px;
+}
+.top-section-content p{
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    font-size: 0.87rem;
+}
 
+.trainings-and-exercises-img{
+    flex-wrap: wrap;
+}
+.trainings-and-exercises-img img{
+    width: 33%;
+}
+
+/* bmi-container */
+.bmi-container{}
+
+.bmi-content{
+    margin-bottom: 88px;
+}
+.bmi-content h2{}
+.bmi-content p{}
+
+.bmi-section{
+    /* height: 487px; */
+    background-color: #222222;
+    padding-top: 49px;
+    padding-bottom: 52px;
+}
+
+.bmi-section-container{
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    height: 386px;
+}
+
+.bmi-chart{}
+/* .bmi-content-header{} */
+
+table{
+    margin-top: 52px;
+    border-collapse: collapse;
+}
+th, td{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 15px 25px;
+}
+th{
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: start;
+}
+td{
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    font-size: 0.87rem;
+    text-align: start;
+}
+
+.calculate-bmi{}
+
+.calculate-bmi-content{}
+/* .bmi-content-header{} */
+.calculate-bmi-content p{
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    font-size: 0.87rem;
+    max-width: 550px;
+    margin: 14px 0 34px;
+}
+
+form{
+    margin-bottom: 34px;
+}
+
+.calculate-bmi button{
+    padding: 16px 70.5px;
+}
 
 
 
@@ -324,7 +425,13 @@ footer{
 /* mobile responsiveness */
 @media screen and (max-width: 576px){
     .header-section, 
-    .header-section-content{
+    .header-section-content, 
+    #Change-Your-Habits, 
+    .run-container, 
+    .trainings-and-exercises, 
+    .bmi-content, 
+    .bmi-section-container, 
+    .top-section-content{
         max-width: 353px;
         margin: 0 auto;
     }
@@ -347,8 +454,12 @@ footer{
     .mobile-nav-menu i{
         color: #FFFFFF;
     }
-    .desktop-nav-menu{
+    .desktop-nav-menu, 
+    .desktop-part{
         display: none;
+    }
+    .bmi-content-header{
+        font-size: 1rem;
     }
 
     /* ------hero-section------- */
@@ -486,6 +597,78 @@ footer{
         height: 170px;
         border-radius: 18px;
         margin: 0 33px 35px 33px;
+    }
+
+    /* trainings-and-exercises */
+    .trainings-and-exercises{
+        padding: 66px 0 30px;
+    }
+
+    .top-section-content{
+        margin-bottom: 38px;
+    }
+    .top-section-content h2{
+        font-size: 2rem;
+        margin-bottom: 14px;
+    }
+    .top-section-content p{
+        max-width: 330px;
+    }
+    /* need-some-work */
+    .trainings-and-exercises-img{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .trainings-and-exercises-img img{
+        width: 353px;
+    }
+    
+    /* bmi-container */
+    .bmi-container{}
+
+    .bmi-content{
+        margin-bottom: 32px;
+    }
+    .bmi-content h2{}
+    .bmi-content p{}
+
+    .bmi-section{
+        /* height: 487px; */
+        background-color: #222222;
+        padding-top: 34px;
+        padding-bottom: 43px;
+    }
+
+    .bmi-section-container{
+        flex-direction: column;
+        /* border: 1px solid red; */
+        max-width: 353px;
+        height: 695px;
+        /* margin: 0 auto; */
+        /* justify-content: center;
+        align-items: center; */
+    }
+
+    table{
+        margin-top: 23px;
+    }
+
+    .calculate-bmi{}
+
+    .calculate-bmi-content{}
+    /* .bmi-content-header{} */
+    .calculate-bmi-content p{
+        max-width: 346px;
+        margin: 14px 0 34px;
+    }
+
+    form{
+        margin-bottom: 34px;
+    }
+
+    .calculate-bmi button{
+        padding: 16px 70.5px;
     }
 }
 /* tablet responsiveness */
