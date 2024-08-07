@@ -33,6 +33,7 @@ main, footer{
 .bmi-content, 
 .bmi-section-container, 
 .team-container, 
+.faq-container, 
 .footer-section{
     max-width: 1060px;
     margin: 0 auto;
@@ -339,12 +340,131 @@ main, footer{
     font-size: 0.87rem;
 }
 
-.trainings-and-exercises-img{
+.trainings-and-exercises-gallery{
+    /* height: 403px; */
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.training-and-exercise{
+    position: relative;
+}
+.tae-part1{
+    grid-column: 1/span 4;
+}
+.tae-part2{
+    grid-column: 5/span 11;
+}
+.tae-part3{
+    grid-column: 16/span 5;
+}
+.tae-part4{
+    grid-column: 1/span 8;
+}
+.tae-part5{
+    grid-column: 9/span 5;
+}
+.tae-part6{
+    grid-column: 14/span 7;
+}
+
+.training-and-exercise img{
+    width: 100%;
+    height: 201.5px;
+}
+.training-and-exercise h5{
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 0.87rem;
+    font-weight: 500;
+}
+#text-te1{
+    color: #000000;
+    top: 157px;
+    left: 24px;
+}
+.text-te2{
+    top: 31px;
+    left: 25px;
+}
+.text-te3{
+    top: 146px;
+    left: 27px;
+}
+.text-te4{
+    top: 25.5px;
+    left: 249px;
+}
+.text-te5{
+    top: 145.5px;
+    left: 34px;
+}
+.text-te6{
+    top: 142.5px;
+    left: 38px;
+}
+
+.te-img1, .te-img2, .te-img3, .te-img4, .te-img5, .te-img6{
+    position: relative;
+}
+
+.overlay1{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 201.5px;
+    /* height: 100%; */
+    background-color: rgba(6, 255, 210, 0.5);
+}
+.overlay2{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 201.5px;
+    background-color: rgba(255, 0, 0, 0.3);
+}
+.overlay3{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 201.5px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.overlay4{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 201.5px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.overlay5{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 201.5px;
+    background-color: rgba(66, 255, 0, 0.3);
+}
+.overlay6{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 201.5px;
+    background-color: rgba(0, 71, 255, 0.3);
+}
+
+/* .trainings-and-exercises-img{
     flex-wrap: wrap;
 }
 .trainings-and-exercises-img img{
     width: 33%;
-}
+} */
 
 /* bmi-container */
 .bmi-container{}
@@ -403,9 +523,34 @@ td{
     max-width: 550px;
     margin: 14px 0 34px;
 }
-
-form{
+/* -----form----- */
+.bmi-form{
     margin-bottom: 34px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 12px;
+}
+input, select{
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 8px;
+    padding: 13px 0 13px 20px;
+    /* width: 282px; */
+}
+input::placeholder{
+    color: rgba(255, 255, 255, 0.6);
+}
+#activity-factor{
+    grid-column: 1/span 2;
+}
+.select-activity option, 
+#select-sex option{
+    background-color: #FFFFFF;
+    color: #000000;
 }
 
 .calculate-bmi button{
@@ -429,14 +574,134 @@ form{
     height: 604px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 18px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
 }
-.team-member-img img{}
+.team-member-img img{
+    width: 326px;
+    height: 272px;
+    border-radius: 18px;
+    filter: brightness(80%);
+    /* position: relative; */
+}
+.trainer{
+    position: relative;
+}
+.trainer-info{
+    /* width: 117px; */
+    height: 44px;
+    position: absolute;
+    left: 19px;
+    bottom: 16px;
+    /* border: 5px solid red; */
+}
+.trainer-info h5{
+    font-size: 1.25rem;
+    font-weight: 900;
+    color: #FFFFFF;
+}
+.trainer-info h6{
+    font-size: 0.87rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* faq container section */
+.faq-container{
+    padding-bottom: 88px;
+}
+.faq-container-section{
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 18px;
+    height: 600px;
+    padding: 50px 0;
+}
+
+.faq-left-part{
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.faq-heading{}
+.faq-heading h2{
+    font-size: 3rem;
+    font-weight: 900;
+    color: #FFFFFF;
+    width: 450px;
+}
+
+.faq-footer-part{
+    background-color: #000;
+    width: 300px;
+    padding: 20px 30px;
+    border-radius: 8px;
+}
+.faq-img-section{
+    width: 160px;
+    height: 40px;
+}
+.faq-img-section img{
+    width: 30%;
+    height: 100%;
+    border-radius: 50%;
+    margin-right: 2px;
+}
+.faq-footer-part h6{
+    margin: 10px 0;
+    font-size: 1rem;
+    font-weight: 900;
+    color: #FFFFFF;
+}
+.faq-footer-part p{
+    font-size: 0.87rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.faq-right-part{
+    width: 400px;
+}
+
+.faq{
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.question{
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 13px 0 13px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    /* list-style: none; */
+    display: block;
+    border-radius: 8px;
+}
+.answer{
+    font-size: 0.87rem;
+    color: #000;
+    background-color: white;
+    padding: 13px 20px;
+    font-weight: 400;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: none;
+    border-radius: 8px;
+}
+input[type="radio"] {
+    display: none;
+}
+input[type="radio"]:checked + .question + .answer {
+    display: block;
+}
 
 /* footer container */
 .footer-container{
     height: 489px;
     background-color: rgba(255, 255, 255, 0.1);
-    /* border: 1px solid red; */
     padding: 66px 0 35px;
 }
 .footer-section{
@@ -504,7 +769,6 @@ form{
 
 
 
-
 /* mobile responsiveness */
 @media screen and (max-width: 576px){
     .header-section, 
@@ -515,6 +779,7 @@ form{
     .bmi-content, 
     .bmi-section-container, 
     .team-container, 
+    .faq-container, 
     .footer-section{
         max-width: 353px;
         margin: 0 auto;
@@ -538,7 +803,7 @@ form{
     .mobile-nav-menu i{
         color: #FFFFFF;
     }
-    .desktop-nav-menu, 
+    /* .desktop-nav-menu,  */
     .desktop-part{
         display: none;
     }
@@ -698,17 +963,65 @@ form{
     .top-section-content p{
         max-width: 330px;
     }
-    /* need-some-work */
-    .trainings-and-exercises-img{
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
+    
+    .trainings-and-exercises-gallery{}
+    
+    .tae-part1{
+        grid-column: 1/span 11;
     }
-    .trainings-and-exercises-img img{
-        width: 353px;
+    .tae-part2{
+        grid-column: 12/span 9;
+    }
+    .tae-part4{
+        grid-column: 1/span 9;
+    }
+    .tae-part5{
+        grid-column: 10/span 11;
     }
     
-    /* bmi-container */
+    .training-and-exercise img{
+        width: 100%;
+        height: 128px;
+    }
+    .training-and-exercise h5{}
+
+    #text-te1{
+        color: #FFFFFF;
+        top: 95px;
+        left: 16px;
+    }
+    .text-te2{
+        top: 25px;
+        left: 31px;
+    }
+    .text-te4{
+        top: 99px;
+        left: 11px;
+    }
+    .text-te5{
+        top: 98px;
+        left: 18px;
+    }
+    
+    .overlay1{
+        width: 100%;
+        height: 128px;
+        /* height: 100%; */
+    }
+    .overlay2{
+        width: 100%;
+        height: 128px;
+    }
+    .overlay4{
+        width: 100%;
+        height: 128px;
+    }
+    .overlay5{
+        width: 100%;
+        height: 128px;
+    }
+    
+    /* bmi container */
     .bmi-container{}
 
     .bmi-content{
@@ -747,8 +1060,8 @@ form{
         margin: 14px 0 34px;
     }
 
-    form{
-        margin-bottom: 34px;
+    input, select{
+        width: 100%;
     }
 
     .calculate-bmi button{
@@ -765,10 +1078,69 @@ form{
         margin: 0 auto 37px;
     }
     .team-member-img{
-        max-width: 353px;
-        height: 1188px;
+        /* max-width: 353px; */
+        height: auto;
+        grid-template-columns: repeat(1, 1fr);
     }
-    .team-member-img img{}
+    .team-member-img img{
+        width: 313px;
+    }
+    .desktop-img-part1{
+        order: 1;
+    }
+    .desktop-img-part2{
+        order: 2;
+    }
+    .desktop-img-part3{
+        order: 3;
+    }
+    .desktop-img-part4{
+        order: 4;
+    }
+
+    /* faq container section */
+    .faq-container{
+        padding-bottom: 66px;
+    }
+    .faq-container-section{
+        /* justify-content: space-around; */
+        flex-direction: column;
+        height: auto;
+        padding: 50px 20px;
+    }
+
+    .faq-left-part{
+        flex-direction: column;
+    }
+
+    .faq-heading{
+        margin-bottom: 42px;
+    }
+    .faq-heading h2{
+        text-align: center;
+        font-size: 2rem;
+        width: auto;
+    }
+
+    .faq-footer-part{
+        margin: 0 auto 42px;
+    }
+    .faq-img-section{
+        margin: 0 auto;
+    }
+    .faq-footer-part h6, 
+    .faq-footer-part p{
+        text-align: center;
+    }
+
+    .faq-right-part{
+        width: auto;
+    }
+    /* .question, 
+    .answer{
+        text-align: center;
+        padding: 13px 20px;
+    } */
 
     /* footer container */
     .footer-container{
