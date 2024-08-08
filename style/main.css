@@ -848,8 +848,8 @@ input[type="radio"]:checked + .question + .answer {
         width: 145px;
         height: 74px;
         padding: 12px 17px;
-        margin-top: 110px;
-        margin-left: 210px;
+        margin-top: 99px;
+        margin-left: 194px;
     }
     .hero-img-top h5{
         font-size: 1.89rem;
