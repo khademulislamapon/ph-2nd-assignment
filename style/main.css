@@ -177,6 +177,7 @@ main, footer{
 
 .hero-img-content img{
     margin-top: 31px;
+    object-fit: cover;
 }
 
 .hero-img-bottom{
@@ -317,6 +318,8 @@ main, footer{
     width: 366px;
     height: 312px;
     border-radius: 18px;
+    object-fit: none;
+    object-position: 68% 30%;
 }
 /* trainings-and-exercises */
 .trainings-and-exercises{
@@ -340,11 +343,12 @@ main, footer{
     font-size: 0.87rem;
 }
 
+/* trainings & exercises gallery-start */
 .trainings-and-exercises-gallery{
-    /* height: 403px; */
+    height: 403px;
     display: grid;
     grid-template-columns: repeat(20, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(20, 1fr);
 }
 
 .training-and-exercise{
@@ -352,27 +356,98 @@ main, footer{
 }
 .tae-part1{
     grid-column: 1/span 4;
+    grid-row: 1/span 10;
 }
 .tae-part2{
     grid-column: 5/span 11;
+    grid-row: 1/span 10;
 }
 .tae-part3{
     grid-column: 16/span 5;
+    grid-row: 1/span 10;
 }
 .tae-part4{
     grid-column: 1/span 8;
+    grid-row: 11/span 10;
 }
 .tae-part5{
     grid-column: 9/span 5;
+    grid-row: 11/span 10;
 }
 .tae-part6{
     grid-column: 14/span 7;
+    grid-row: 11/span 10;
 }
 
+/* img/te-img */
 .training-and-exercise img{
     width: 100%;
+    /* height: 100%; */
     height: 201.5px;
+    object-fit: cover;
+    overflow: hidden;
 }
+
+.te-img1, .te-img2, .te-img3, .te-img4, .te-img5, .te-img6{
+    position: relative;
+}
+
+.overlay1{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    /* height: 201.5px; */
+    height: 100%;
+    background-color: rgba(6, 255, 210, 0.5);
+}
+.overlay2{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    /* height: 201.5px; */
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.3);
+}
+.overlay3{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    /* height: 201.5px; */
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.overlay4{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 201.5px;
+    /* height: 100%; */
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.overlay5{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 201.5px;
+    /* height: 100%; */
+    background-color: rgba(66, 255, 0, 0.3);
+}
+.overlay6{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 201.5px;
+    /* height: 100%; */
+    background-color: rgba(0, 71, 255, 0.3);
+}
+
+/* h5 / text te */
 .training-and-exercise h5{
     position: absolute;
     color: #FFFFFF;
@@ -405,66 +480,7 @@ main, footer{
     left: 38px;
 }
 
-.te-img1, .te-img2, .te-img3, .te-img4, .te-img5, .te-img6{
-    position: relative;
-}
-
-.overlay1{
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 201.5px;
-    /* height: 100%; */
-    background-color: rgba(6, 255, 210, 0.5);
-}
-.overlay2{
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 201.5px;
-    background-color: rgba(255, 0, 0, 0.3);
-}
-.overlay3{
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 201.5px;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-.overlay4{
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 201.5px;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-.overlay5{
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 201.5px;
-    background-color: rgba(66, 255, 0, 0.3);
-}
-.overlay6{
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 201.5px;
-    background-color: rgba(0, 71, 255, 0.3);
-}
-
-/* .trainings-and-exercises-img{
-    flex-wrap: wrap;
-}
-.trainings-and-exercises-img img{
-    width: 33%;
-} */
+/* trainings & exercises gallery-end */
 
 /* bmi-container */
 .bmi-container{}
@@ -586,7 +602,7 @@ input::placeholder{
     height: 272px;
     border-radius: 18px;
     filter: brightness(80%);
-    /* position: relative; */
+    object-fit: cover;
 }
 .trainer{
     position: relative;
@@ -883,7 +899,7 @@ input[type="radio"]:checked + .question + .answer {
     }
     /* Change-Your-Habits */
     #Change-Your-Habits{
-        padding: 100px 0;
+        padding: 66px 0;
     }
 
     .section-text{
@@ -948,6 +964,7 @@ input[type="radio"]:checked + .question + .answer {
         height: 170px;
         border-radius: 18px;
         margin: 0 33px 35px 33px;
+        object-fit: cover;
     }
 
     /* trainings-and-exercises */
@@ -966,8 +983,10 @@ input[type="radio"]:checked + .question + .answer {
         max-width: 330px;
     }
     
-    .trainings-and-exercises-gallery{}
-    
+    /* trainings & exercises gallery-start */
+    .trainings-and-exercises-gallery{
+        height: 253px;
+    }
     .tae-part1{
         grid-column: 1/span 11;
     }
@@ -980,13 +999,10 @@ input[type="radio"]:checked + .question + .answer {
     .tae-part5{
         grid-column: 10/span 11;
     }
-    
     .training-and-exercise img{
         width: 100%;
         height: 128px;
     }
-    .training-and-exercise h5{}
-
     #text-te1{
         color: #FFFFFF;
         top: 95px;
@@ -1004,7 +1020,6 @@ input[type="radio"]:checked + .question + .answer {
         top: 98px;
         left: 18px;
     }
-    
     .overlay1{
         width: 100%;
         height: 128px;
@@ -1022,7 +1037,8 @@ input[type="radio"]:checked + .question + .answer {
         width: 100%;
         height: 128px;
     }
-    
+    /* trainings & exercises gallery-end */
+
     /* bmi container */
     .bmi-container{}
 
