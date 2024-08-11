@@ -13,8 +13,6 @@
 /* common css style */
 body{
     font-family: "Inter", sans-serif;
-}
-main, footer{
     background-color: #000000;
     color: white;
 }
@@ -49,7 +47,7 @@ main, footer{
 .header-container{
     /* max-width: 1440px; */
     height: 715px;
-    background: linear-gradient(to bottom, #000000, #434343);
+    background: linear-gradient(180deg, #222222, #000000);
     padding-top: 57px;
     /* border: 1px solid red; */
 }
@@ -555,13 +553,7 @@ input, select{
     border: none;
     border-radius: 8px;
     padding: 13px 0 13px 20px;
-    /* width: 282px; */
-}
-select{
-    appearance: none;
-    background-image: url(../images/chevron-down.png);
-    background-repeat: no-repeat;
-    background-position: right 20px center;
+    border-right: 20px solid transparent;
 }
 input::placeholder{
     color: rgba(255, 255, 255, 0.6);
