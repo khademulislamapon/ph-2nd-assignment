@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @font-face {
     font-family: Miama;
-    src: url("../fonts/Miama.ttf");
+    src: url("../fonts/miama/Miama.ttf");
 }
 /* font-family: "Miama", sans-serif; */
 *{
@@ -118,8 +118,8 @@ main, footer{
     line-height: 115%;
 }
 .hero-text-content h1 span{
-    font-family: "Miama", sans-serif;
-    color: #FFFFFF;
+    font-family: Miama;
+    font-size: 9.5rem;
     font-weight: 400;
 }
 .hero-text-content p{
@@ -557,6 +557,12 @@ input, select{
     padding: 13px 0 13px 20px;
     /* width: 282px; */
 }
+select{
+    appearance: none;
+    background-image: url(../images/chevron-down.png);
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+}
 input::placeholder{
     color: rgba(255, 255, 255, 0.6);
 }
@@ -841,6 +847,9 @@ input[type="radio"]:checked + .question + .answer {
     .hero-text-content h1{
         max-width: 250px;
         font-size: 2.25rem;
+    }
+    .hero-text-content h1 span{
+        font-size: 4.50rem;
     }
     .hero-text-content p{
         max-width: 274px;
